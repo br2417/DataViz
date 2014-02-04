@@ -9,6 +9,55 @@
 		<h1>Class on GitHub</h1>
 		<div> Test web page</div>
 		<div>This is a cloned repo - second change made</div>
+		
+		<script>
+			var someText = "This is a string";
+			console.log(someText);
+			
+			var SomeArray = ["red", "orange", "yellow", "green", "blue"]
+			console.log(SomeArray)
+		
+			var SomeCat = {"name": "lulu", "color": "grey", "gender": "female", "age": 9, "isFemale" : true, "kittens" : ["bubbles", "bobbles"], "friends" : {"dog" : "Mike", "mouse": "Sqeaky"}};
+			
+			//SomeCat is an object. We can collect the adjectives/attributes and put them in a list - within the list
+			//there can be anything. For example the above has a number (9) and a boolean
+			
+			/* The "kittens" list contains the names of the kittens 
+			 
+			 */
+			
+			console.log(SomeCat)
+			
+			console.log(SomeCat.isFemale); 
+			
+			
+			// if you want to rename the value of an object, let's say you want to rename someText, you have to write it out again without 'var' - see below
+			
+			someText = "Some awesome text!!"
+			console.log(someText)
+			
+			// you can modify things as you go along 
+			//what if you want to change Lulu's name? 
+			
+			SomeCat.name = "Alice"
+			console.log(SomeCat.name)
+			console.log(SomeCat)
+			
+			//if you want to change the objects - add dots, see below
+			
+			SomeCat.kittens[1] = "Ryan"
+			console.log(SomeCat.kittens[1])
+			
+			//ignore the above - had probs in class - though the above worked for me
+			
+			SomeCat.friends.dog = "Julie"
+			//example comment: "Output the name of the first friend's name, the one that is a dog"
+			console.log(SomeCat.friends.dog)
+			
+		</script>
+		
+		
+		
 	</body>
 </html>
 
