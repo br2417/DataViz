@@ -13,12 +13,12 @@
 		<script>
 		
 		
-		// MyBookShelf is a string. 
+		// "MyBookShelf" is a string. 
 		
 			var MyBookShelf = "This is my shelf of books";
 			console.log(MyBookShelf);
 			
-		// FavoriteBooks is an array; a list of my favorite books.
+		// "FavoriteBooks" is an array; a list of my favorite books.
 			
 			var FavoriteBooks = ["The Little Prince", "Wuthering Heights", "Shantaram", "Rebecca", "Half of a Yellow Sun"]
 			console.log(FavoriteBooks)
@@ -27,14 +27,14 @@
 			var NumberOfBooks = 5;
 			console.log(NumberOfBooks)
 		
-		//"Pages in Books" is an object with five key-value pairs, giving the number of pages for each book on the shelf. 
+		//"PagesInBooks" is an object with five key-value pairs, with the number of pages for each book on the shelf. 
 		
 		var PagesInBooks = {"The Little Prince" : 120, "Wuthering Heights" : 378, "Shantaram": 840, "Rebecca" : 304, "Half of a Yellow Sun" : 507};
 			console.log(PagesInBooks)
 			
 		/*"TheShelf" is an object with a list of the shelf's attributes (the material it's made out of, its color etc.).
 		In the list I included a boolean (which answers 'true'/yes to whether the shelf is sturdy or not.)
-		I also included an array called "StuffOnShelf", which is a list of other stuff on the shelf. */
+		I also included an array called "StuffOnShelf", which is a list of other things on the shelf. */
 			
 
 			var TheShelf = {"material" : "wood", "color" : "brown", "finish" : "glossy", "isSturdy" : true, "StuffOnShelf" : ["clock", "keys", "lamp", "postcards"]}
@@ -45,12 +45,13 @@
 			console.log(TheShelf.StuffOnShelf)
 			
 			
-		/*Below, I decided to rename one of the values of the object TheShelf; to change the color of the shelf that I specified within the object "TheShelf". 
+		/*I then decided to rename one of the values of the object "TheShelf"; changing the color of the shelf that I specified within the object "TheShelf". 
 		 I changed the color from "brown" to "light brown" */
 		
 			TheShelf.color = "light brown"
 			
-		// I console.logged the TheShelf.color to check if the color had been changed. The expected output in the console should be "light brown."
+		// I console.logged the TheShelf.color to check if the color had been changed. The expected output in the console is "light brown."
+			
 			console.log(TheShelf.color)
 		
 		// Then, I decided to change the fourth item in my array "StuffOnShelf" within the object "TheShelf".
@@ -59,7 +60,7 @@
 		
 			TheShelf.StuffOnShelf[3] = "photographs"
 			
-		// Again, I console.logged TheShelf.StuffOnShelf[3] in order to check that the change had been made. The expected output in the console should be "photographs"
+		// Again, I console.logged TheShelf.StuffOnShelf[3] in order to check that the change had been made. The expected output in the console is "photographs"
 		
 			console.log(TheShelf.StuffOnShelf[3])
 			
