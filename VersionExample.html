@@ -11,48 +11,58 @@
 		<div>This is a cloned repo - second change made</div>
 		
 		<script>
-			var someText = "This is a string";
-			console.log(someText);
-			
-			var SomeArray = ["red", "orange", "yellow", "green", "blue"]
-			console.log(SomeArray)
 		
-			var SomeCat = {"name": "lulu", "color": "grey", "gender": "female", "age": 9, "isFemale" : true, "kittens" : ["bubbles", "bobbles"], "friends" : {"dog" : "Mike", "mouse": "Sqeaky"}};
+		
+		// MyBookShelf is a string. 
+		
+			var MyBookShelf = "This is my shelf of books";
+			console.log(MyBookShelf);
 			
-			//SomeCat is an object. We can collect the adjectives/attributes and put them in a list - within the list
-			//there can be anything. For example the above has a number (9) and a boolean
+		// FavoriteBooks is an array; a list of my favorite books.
 			
-			/* The "kittens" list contains the names of the kittens 
-			 
-			 */
+			var FavoriteBooks = ["The Little Prince", "The Life of Pie", "Shantaram", "Rebecca", "Half of a Yellow Sun"]
+			console.log(FavoriteBooks)
 			
-			console.log(SomeCat)
+		//"NumberOfBooks" is the number of books on my shelf (there are five books on the shelf)
+			var NumberOfBooks = 5;
+			console.log(NumberOfBooks)
+		
+		//"Pages in Books" is an object with five key-value pairs, giving the number of pages for each book on the shelf. 
+		
+		var PagesInBooks = {"The Little Prince" : 120, "The Life of Pie" : 320, "Shantaram": 840, "Rebecca" : 304, "Half of a Yellow Sun" : 507};
+			console.log(PagesInBooks)
 			
-			console.log(SomeCat.isFemale); 
+		/*"TheShelf" is an object with a list of the shelf's attributes (the material it's made out of, its color etc.).
+		In the list I included a boolean (which answers 'true'/yes to whether the shelf is sturdy or not.)
+		I also included an array called "StuffOnShelf", which is a list of other stuff on the shelf. */
+			
+
+			var TheShelf = {"material" : "wood", "color" : "brown", "finish" : "glossy", "isSturdy" : true, "StuffOnShelf" : ["clock", "keys", "lamp", "postcards"]}
+			console.log(TheShelf)		
+		
+		//Below I console.logged the OnShelf.StuffOnShelf array (within the object) in order to directly access the "StuffOnShelf" array which is the list of other stuff on the shelf. 
+			
+			console.log(TheShelf.StuffOnShelf)
 			
 			
-			// if you want to rename the value of an object, let's say you want to rename someText, you have to write it out again without 'var' - see below
+		/*Below, I decided to rename one of the values of the object TheShelf; to change the color of the shelf that I specified within the object "TheShelf". 
+		 I changed the color from "brown" to "light brown" */
+		
+			TheShelf.color = "light brown"
 			
-			someText = "Some awesome text!!"
-			console.log(someText)
+		// I console.logged the TheShelf.color to check if the color had been changed. The expected output in the console should be "light brown."
+			console.log(TheShelf.color)
+		
+		// Then, I decided to change the fourth item in my array "StuffOnShelf" within the object "TheShelf".
+		// I changed the item from "postcards" to "photographs"
+		// Computers count from 0, so I noted the fourth item as the third, as you can see below in square brackets.
+		
+			TheShelf.StuffOnShelf[3] = "photographs"
 			
-			// you can modify things as you go along 
-			//what if you want to change Lulu's name? 
+		// Again, I console.logged TheShelf.StuffOnShelf[3] in order to check that the change had been made. The expected output in the console should be "photographs"
+		
+			console.log(TheShelf.StuffOnShelf[3])
 			
-			SomeCat.name = "Alice"
-			console.log(SomeCat.name)
-			console.log(SomeCat)
-			
-			//if you want to change the objects - add dots, see below
-			
-			SomeCat.kittens[1] = "Ryan"
-			console.log(SomeCat.kittens[1])
-			
-			//ignore the above - had probs in class - though the above worked for me
-			
-			SomeCat.friends.dog = "Julie"
-			//example comment: "Output the name of the first friend's name, the one that is a dog"
-			console.log(SomeCat.friends.dog)
 			
 		</script>
 		
